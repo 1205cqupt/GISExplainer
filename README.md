@@ -1,0 +1,1 @@
+This repository contains the open-source implementation of the paper "GISExplainer: Game-Theoretic Edge Interactions for Connected Subgraph Explanations of Graph Neural Networks."

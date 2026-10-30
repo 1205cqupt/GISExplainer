@@ -1,0 +1,28 @@
+defaults:
+  - models: gin
+  - datasets: ba_shapes
+  - explainers: subgraphx
+  - override hydra/job_logging: disabled
+  - _self_
+
+device_id: 0
+log_path: "log"
+log_level: 20
+console_log: True
+save_plot: False
+
+hydra:
+  run:
+    dir: "."
+
+explain:
+  sparsity: 0.7
+  test_node: [664,665,611,345,574,
+              662,419,444,555,666,
+              415,618,432,699,621,
+              455,333,375,468,352,
+              388,488,599,696,
+              358,617,489,234]
+#  test_node: [611]
+  explain_node_result_save_pth: "result/explain_node_result"
+  explain_all_result_save_pth: "result/explain_all_result"
